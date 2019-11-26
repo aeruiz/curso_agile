@@ -15,7 +15,7 @@ import javax.swing.text.StyledEditorKit.ForegroundAction;
 
 public class AsignadorDeVehiculosDeEntregaTest {
 
-	@Test
+	@Test(expected = RuntimeException.class)
 	public void cincoPaquetes() {
 		
 		List<String> paquetes = new 	LinkedList <>();
@@ -28,7 +28,7 @@ public class AsignadorDeVehiculosDeEntregaTest {
 		
 	}
 	
-	@Test
+	@Test(expected = RuntimeException.class)
 	public void cincoADiezPaquetes() {
 		
 		List<String> paquetes = new 	LinkedList <>();
@@ -41,7 +41,7 @@ public class AsignadorDeVehiculosDeEntregaTest {
 		
 	}
 	
-	@Test
+	@Test(expected = RuntimeException.class)
 	public void diezATreintaPaquetes() {
 		
 		List<String> paquetes = new 	LinkedList <>();

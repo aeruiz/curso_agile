@@ -17,6 +17,7 @@ public class AsignadorVehiculos {
 		else if(paquetes.size() < 30)
 			envio.setVehiculo("AUTO");
 		else {
+			throw new RuntimeException();
 		}
 		return envio;
 	}
